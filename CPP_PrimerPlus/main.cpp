@@ -9,11 +9,13 @@ void arrayone();
 void stringone();
 //4.3 string类
 void strtpye();
+//4.4 结构介绍
+void structur();
 
 int main()
 {
 	//4.4 结构
-	cout << "ok" << endl;
+	structur();
 
 	//4.3 string类
 	//strtpye();
@@ -25,6 +27,86 @@ int main()
 	//4.1 数组
 	//arrayone();
 }
+
+void structur()
+{
+	//拷贝
+	struct stringStruct1
+	{
+		string name;
+	};
+	stringStruct1 string_s_struct1 = { "萌萌哒哒" };
+	stringStruct1 string_s_struct2 = string_s_struct1;
+	cout << "name is " << string_s_struct2.name << endl;
+	//结构定义+声明
+	struct stringStruct2
+	{
+				string name;
+	} string_struct3;
+	string_struct3.name = "萌萌哒哒2";
+	cout << "name is " << string_struct3.name << endl;
+	//结构定义+声明 + 赋值
+	struct stingStruct3
+	{
+		string name;
+	} string_struct4 = {
+		"萌萌哒哒3"
+	};
+	cout << "name is " << string_struct4.name << endl;
+	//匿名结构体
+	struct 
+	{
+		string name;
+	} sting_struct5 = {
+			"萌萌大大5"
+	};
+	cout << "name is " << sting_struct5.name << endl;
+
+	struct stringStruct
+	{
+		string address;
+	};
+	//打印出来是28，因为内部存在有缓冲区设置
+	stringStruct strStruct{ "赵谦孙俪" };
+	cout << "strStruct size is " << sizeof(strStruct) << endl;
+	stringStruct strStruct1 = {};
+	cout << "strStruct1 size is " << sizeof(strStruct1) << endl;
+	
+	
+	struct inflatable
+	{
+		char name[20];
+		float volume;
+		double price;
+	};
+
+	inflatable gest = {
+		"menglong",
+		1.88,
+		29.99
+	};
+	inflatable pal = {
+			"menglong2",
+			1.8,
+			29.9
+		};
+	cout << "gest name is " << gest.name << endl;
+	cout << "gest volume is " << gest.volume << endl;
+	cout << "gest price is " << gest.price << endl;
+	cout << "pal name is " << pal.name << endl;
+	cout << "pal volume is " << pal.volume << endl;
+	cout << "pal price is " << pal.price << endl;
+
+	inflatable gestC11{ "menglong2",22,33 };
+	inflatable gestC112 = { "menglong3",44,55 };
+	inflatable gest2 = { "menglong4",1.333,22 };//缩窄转换有问题
+	cout <<"gest size is " << sizeof(gest) << endl;
+	inflatable gest3 = {};
+	cout << "gest3 size is" << sizeof(gest3) <<endl;
+	cout << "gest3.volum is " << gest3.volume << endl;
+	cout << "gest3.name is " << gest3.name << endl;
+}
+
 
 //4.3 string类
 void strtpye()
