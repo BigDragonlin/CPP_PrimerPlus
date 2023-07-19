@@ -88,7 +88,7 @@ void strtpye()
 		<< endl;
 	cout << "The third letter in " << charr2 << " is "
 		<< charr2[2] << endl;
-
+	
 }
 
 
