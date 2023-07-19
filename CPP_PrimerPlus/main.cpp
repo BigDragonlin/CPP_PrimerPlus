@@ -7,13 +7,16 @@ using namespace std;
 void arrayone();
 //4.2 字符串
 void stringone();
-//4.4 string类
+//4.3 string类
 void strtpye();
 
 int main()
 {
+	//4.4 结构
+	cout << "ok" << endl;
+
 	//4.3 string类
-	strtpye();
+	//strtpye();
 
 	//4.2 字符串
 	//stringone();
