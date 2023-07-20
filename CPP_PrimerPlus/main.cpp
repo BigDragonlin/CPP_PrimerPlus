@@ -11,11 +11,26 @@ void stringone();
 void strtpye();
 //4.4 结构介绍
 void structur();
+//4.5共同体
+void unionFunc();
+//4.6  枚举
+void enumFunc();
+//4.7 指针和自由空间
+void pointFunc();
 
 int main()
 {
+	// 4.7指针和自由空间
+	pointFunc();
+
+	//4.6  枚举
+	// enumFunc();
+
+	//4.5共同体
+	// unionFunc();
+
 	//4.4 结构
-	structur();
+	// structur();
 
 	//4.3 string类
 	//strtpye();
@@ -28,8 +43,84 @@ int main()
 	//arrayone();
 }
 
+//4.7 指针和自由空间
+void pointFunc()
+{
+	int donuts = 10;
+	double cups = 12.1;
+	cout << "douts is " << donuts;
+	cout << "address douts is "<< &donuts << endl;
+	cout << "cups is " << cups;
+	cout << "address cups is " << &cups << endl;
+}
+
+
+//4.6  枚举
+void enumFunc()
+{
+	//而枚举的变量是直接在全局作用域定义的,所以可以直接访问,不需要通过"枚举变量."的方式。
+	enum color { red, orange, yellow, green, blue, violet, indigo };
+	cout << "打印颜色 " << red;
+	cout << "打印颜色 " << orange;
+	color myColor = orange;
+	cout << "my color is " << myColor << endl;
+
+	//枚举的值可以相同
+	enum color1 { red1 = -1 ,orange1 = 16};
+	//使用四个字节
+	cout<<"size of color is "<< sizeof(color1)<<endl;
+}
+
+void unionFunc(){
+	//共用体
+	union one4all
+	{
+		int age;
+		double money;
+	};
+	one4all one4_all;
+	cout << "before one4all的大小是" << sizeof(one4_all) << endl;
+	one4_all.age = 11;
+	cout << "after one4all的大小是" << sizeof(one4_all) << endl;
+	struct struct1 {
+		int state;
+		union my_union
+		{
+			int age = 0;
+			double price;
+		}MyUnion;
+	};
+	struct1 myStruct;
+
+	// 匿名共用体
+	struct struct2
+	{
+		int state;
+		union
+		{
+			int age ;
+			double price;
+		};
+	}myStruct2;
+	myStruct2.age= 11;
+	cout<<"匿名共用体的age是 "<< myStruct2.age <<endl;
+	cout << "匿名共用体的price是 " << myStruct2.price << endl;
+}
+
 void structur()
 {
+	//结构数组
+	struct stringStruct3
+	{
+		string name;
+	};
+	stringStruct3 stringStc3[2] = {
+		{"meng"},
+		{"long"}
+	};
+	cout << "stringStc3[0] is " << stringStc3[0].name << endl;
+	cout << "stingStc3[0] is " << stringStc3[1].name << endl;
+
 	//拷贝
 	struct stringStruct1
 	{
@@ -79,7 +170,6 @@ void structur()
 		float volume;
 		double price;
 	};
-
 	inflatable gest = {
 		"menglong",
 		1.88,
