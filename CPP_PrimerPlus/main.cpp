@@ -106,7 +106,7 @@ void forLoopBaseRange()
 }
 
 //5.5 循环和文本输入
-void loopTxtInput()
+void  loopTxtInput()
 {
 
 	//--------5.18 textin3.cpp
