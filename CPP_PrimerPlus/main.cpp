@@ -135,7 +135,6 @@ void loopTxtInput()
 
 void functionAndArray()
 {
-	// 测试aaa
 	auto n_char = [](char inputChar, int num)
 	{
 		while (num-- > 0)
@@ -158,10 +157,110 @@ void functionAndArray()
 	}
 }
 
+//----------8.1 inline.cpp
+inline void testInLineFunction(int* x )
+{
+	cout << "print x" << *x << endl;
+	*x = 100;
+}
+void inLineFunction()
+{
+	//使用宏
+	#define USEMSCRO(x) x * x
+	cout << "USEMSCRO(5) = " << USEMSCRO(5) << endl;
+
+	//-------------------8.1C++内联函数
+	int a = 10;
+	testInLineFunction(&a);
+	cout << "print a" << a << endl;
+}
+
+//------------8.2 firstRef
+void firstRef()
+{
+
+	//---------------8.2引用变量
+	int rates1 = 100;
+	int& rodents = rates1;
+	cout << "rates1 is " << rates1 << endl;
+	cout << "rodents is " << rodents << endl;
+	cout << "rates1 address is " << &rates1 << endl;
+	cout << "rodents address is " << &rodents << endl;
+	int bunnies = 50;
+	rodents = bunnies;
+	cout << "rates1 is " << rates1 << endl;
+	cout << "rodents is " << rodents << endl;
+	cout << "rates1 address is " << &rates1 << endl;
+	cout << "rodents address is " << &rodents << endl;
+	cout << "bunnies address is " << &bunnies << endl;
+
+	printf_s("---------------------\n");
+	int rats2 = 101;
+	int* pt = &rats2;
+	printf("pt is %x\n", pt);
+	int& rodents2 = *pt;
+	printf("rodents2 is %d\n", rodents2);
+	printf("&rodents2 address is %x\n", &rodents2);
+	int bunnies2 = 50;
+	pt = &bunnies2;
+	printf_s("&bunnies2 address is %x\n", &bunnies2);
+	printf("pt is %x\n", pt);
+
+	printf_s("------------swaps---------\n");
+	int wallet1 = 20;
+	int wallet2 = 30;
+	[](int& a, int& b)
+	{
+				int temp;
+		temp = a;
+		a = b;
+		b = temp;
+	}(wallet1, wallet2);
+	cout << "wallet1 is " << wallet1 << endl;
+	cout << "wallet2 is " << wallet2 << endl;
+	[](int* a, int* b)
+	{
+						int temp;
+		temp = *a;
+		*a = *b;
+		*b = temp;
+	}(&wallet1, &wallet2);
+	cout << "wallet1 is " << wallet1 << endl;
+	cout << "wallet2 is " << wallet2 << endl;
+	[](int a, int b)
+	{
+				int temp;
+		temp = a;
+		a = b;
+		b = temp;
+	}(wallet1, wallet2);
+	cout << "wallet1 is " << wallet1 << endl;
+	cout << "wallet2 is " << wallet2 << endl;
+
+
+	//----------8.1C++内联函数
+	int rats = 10;
+	int& ratsRef = rats;
+	cout << "rats is " << rats << endl;
+	cout << "rateRef is " << ratsRef << endl;
+	ratsRef += 1;
+	cout << "rats is " << rats << endl;
+	cout << "rateRef is " << ratsRef << endl;
+	cout << "rats address is " << &rats << endl;
+	cout << "rateRef address is " << &ratsRef << endl;
+
+}
+
 int main()
 {
+	//------------8.2 引用变量
+	firstRef();
+
+	//-------------------8.1C++内联函数
+	//inLineFunction();
+
  	// ------------------7.3函数和数组
-	functionAndArray();
+	//functionAndArray();
 
 
 	//----------5.5 循环和文本输入
