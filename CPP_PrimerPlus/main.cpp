@@ -135,7 +135,6 @@ void loopTxtInput()
 
 void functionAndArray()
 {
-	// ²âÊÔaaa
 	auto n_char = [](char inputChar, int num)
 	{
 		while (num-- > 0)
