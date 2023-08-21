@@ -1,5 +1,7 @@
 #include <iostream>
 #include <ctime>
+#include <fstream>
+#include <cstdlib>
 
 using namespace std;
 //5.1 for循环
@@ -175,9 +177,56 @@ void inLineFunction()
 	cout << "print a" << a << endl;
 }
 
+void file_it(ostream& os, double fo, const double fe[], int n)
+{
+	ios_base::fmtflags initial;
+	initial = os.setf(ios_base::fixed); //保存原始格式
+	os.precision(0);
+	os << "Focal length of objective: " << fo << " mm\n";
+	os.setf(ios::showpoint);
+	os.precision(1);
+	os.width(12);
+	os << "f.1. eyepiece";
+	os.width(15);
+	os << "magnification" << endl;
+	for (int i = 0; i < n; ++i)
+	{
+				os.width(12);
+		os << fe[i];
+		os.width(15);
+		os << int(fo / fe[i] + 0.5) << endl;
+	}
+	os.setf(initial); //恢复原始格式
+}
+
 //------------8.2 firstRef
 void firstRef()
 {
+
+	// ----------------8.26 对象、继承和引用
+	ofstream font;
+	const char* fn = "ep-data.txt";
+	font.open(fn);
+	if (!font.is_open())
+	{
+		cout << "Can't open " << fn << ". Bye.\n";
+		exit(EXIT_FAILURE);
+	}
+	cout << "Enter the focal length of your"
+	"telescope objective in mm: ";
+	double objective;
+	cin >> objective;
+	double eps[5];
+	cout << "Enter the focal lengths, in mm, of 5 eyepieces:\n";
+	for (int i = 0; i < 5; ++i)
+	{
+		cout << "Eyepiece #" << i + 1 << ": ";
+		cin >> eps[i];
+	}
+	file_it(font, objective, eps, 5);
+	file_it(cout, objective, eps, 5);
+	cout << "Done\n";
+
 
 	//---------------8.2引用变量
 	int rates1 = 100;
@@ -290,10 +339,44 @@ void firstRef()
 
 }
 
+char* userLeft(const char* str, int n = 1);
+
+char* userLeft(const char* str, int n)
+{
+	if (n < 0) n = 0;
+	char* p = new char[n + 1];
+	int i = 0;
+	for (int i = 0; i < n && str[i]; ++i)
+		p[i] = str[i];
+	while (i < n)
+		p[i++] = '\0';
+	return p;
+
+}
+
+
+// -------------8.3默认参数
+void defaultParam()
+{
+	char sample[80];
+	cout << "Enter a string:\n";
+	cin.get(sample, 80);
+	char* ps = userLeft(sample, 4);
+	cout << ps << endl;
+	delete[] ps;
+	ps = userLeft(sample);
+	cout << ps << endl;
+	delete[] ps;
+}
+
+
 int main()
 {
+	// -------------8.3默认参数
+	defaultParam();
+
 	//------------8.2 引用变量
-	firstRef();
+	// firstRef();
 
 	//-------------------8.1C++内联函数
 	//inLineFunction();
