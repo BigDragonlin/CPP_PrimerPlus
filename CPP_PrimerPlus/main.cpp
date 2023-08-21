@@ -238,7 +238,46 @@ void firstRef()
 	cout << "wallet2 is " << wallet2 << endl;
 
 
+	printf("----------------strref-----------------\n");
+	struct free_throws
+	{
+		std::string name;
+		int made;
+		int attempts;
+		float percent;
+	};
+	//initializations
+	free_throws one = { "Ifelsa Branch",13,15 };
+	free_throws two = { "Andor Knott",10,16 };
+	free_throws three = { "Minnie Max",5,64 };
+	free_throws four = { "Whily Looper",5,6 };
+	free_throws five = { "Long Long",6,23 };
+	free_throws team = { "Throwgoods",0,0 };
+	free_throws dup; 
+	[](free_throws& initialization)
+	{
+		initialization.percent = float(initialization.made) / float(initialization.attempts);
+	}(one);
+	[](const free_throws& ft)
+	{
+		cout<<"Name:"<<ft.name<<endl;
+		cout << "Made:" << ft.made << endl;
+		cout << "Attempts" << ft.attempts << endl;
+		cout << "Parents: " << ft.percent << endl;
+	}(one);
+	const free_throws* test = [](free_throws& ft)->const free_throws*
+	{
+		free_throws* pt = new  free_throws;
+		*pt = ft;
+		return pt;
+	}(one);
+	cout << "&one " << &one << endl;
+	cout << "test " << test << endl;
+
+
+
 	//----------8.1C++内联函数
+	printf("----------8.1C++内联函数-----------");
 	int rats = 10;
 	int& ratsRef = rats;
 	cout << "rats is " << rats << endl;
