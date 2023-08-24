@@ -370,10 +370,108 @@ void defaultParam()
 }
 
 
+template<typename T>
+void swapUser(T& a, T& b)
+{
+	T temp;
+	temp = a;
+	a = b;
+	b = temp;
+}
+
+
+template<typename T>
+void swapUserArray(T* a, T* b, int lim = 8);
+template<typename T>
+void swapUserArray(T* a, T* b, int lim)
+{
+	T temp;
+	for (int i = 0; i < lim; ++i)
+	{
+		temp = a[i];
+		a[i] = b[i];
+		b[i] = temp;
+	}
+}
+
+struct job
+{
+	char name[40];
+	double salary;
+	int floor;
+};
+
+template<>
+void swapUser<job>(job& a, job& b)
+{
+		job temp;
+	temp = a;
+	a = b;
+	b = temp;
+}
+
+void swapUser(job& a, job& b)
+{
+		job temp;
+	temp = a;
+	a = b;
+	b = temp;
+}
+
+//---------------8.5函数模板
+void templateFunc()
+{
+
+	//-----8.13 显式具体化
+	cout << cout.precision(2);
+	cout.setf(ios::fixed, ios::floatfield);
+	job sue = { "Susan Yaffee",73000.60,7 };
+	job sidney = { "Sidney Taffee",78060.72,9 };
+	cout << "Before job swapping:\n";
+	cout << sue.name << ": $" << sue.salary << " on floor " << sue.floor << endl;
+	cout << sidney.name << ": $" << sidney.salary << " on floor " << sidney.floor << endl;
+	swapUser(sue, sidney);
+	cout << "After job swapping:\n";
+	cout << sue.name << ": $" << sue.salary << " on floor " << sue.floor << endl;
+	cout << sidney.name << ": $" << sidney.salary << " on floor " << sidney.floor << endl;
+	printf("---------------------------------------");
+
+	//------8.12 重载的模板
+	int a1 = 10;
+	int b1 = 20;
+	cout << "i , j =" << a1 << "," << b1 << endl;
+	swapUser(a1, b1);
+	cout << "Using compiler-generated int swapper:\n";
+	cout << "Now i, j = " << a1 << ", " << b1 << endl;
+	int c1[8] = { 0,7,0,4,1,7,7, 6 };
+	int d1[8] = { 0,7,2,0,1,9,6,9 };
+	cout << "Original arrays:\n";
+	cout << c1[0] << c1[1] << "/";
+	cout << c1[2] << c1[3] << c1[4] << c1[5] << c1[6] << c1[7] << endl;
+	cout << d1[0] << d1[1] << "/";
+	cout << d1[2] << d1[3] << d1[4] << d1[5] << d1[6] << d1[7] << endl;
+	swapUserArray(c1, d1);
+	cout << c1[0] << c1[1] << "/";
+	cout << c1[2] << c1[3] << c1[4] << c1[5] << c1[6] << c1[7] << endl;
+	cout << d1[0] << d1[1] << "/";
+	cout << d1[2] << d1[3] << d1[4] << d1[5] << d1[6] << d1[7] << endl;
+
+	//-------8.11 函数模板
+	int a = 10;
+	int b = 20;
+	swapUser(a, b);
+	cout << "a is " << a << endl;
+	cout << "b is " << b << endl;
+}
+
 int main()
 {
+
+	//------------8.5函数模板
+	templateFunc();
+
 	// -------------8.3默认参数
-	defaultParam();
+	//defaultParam();
 
 	//------------8.2 引用变量
 	// firstRef();
