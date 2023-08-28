@@ -404,7 +404,7 @@ struct job
 template<>
 void swapUser<job>(job& a, job& b)
 {
-		job temp;
+	job temp;
 	temp = a;
 	a = b;
 	b = temp;
@@ -412,15 +412,88 @@ void swapUser<job>(job& a, job& b)
 
 void swapUser(job& a, job& b)
 {
-		job temp;
+	job temp;
 	temp = a;
 	a = b;
 	b = temp;
 }
 
+template <typename T>
+void ShowArray(T arr[], int n)
+{
+	cout << "template A" << endl;
+	for (int i = 0; i < n; ++i)
+	{
+		cout << arr[i] << " ";
+	}
+	cout << endl;
+}
+
+template <typename T>
+void ShowArray(T* arr[], int n)
+{
+	cout << "template B" << endl;
+	for (int i = 0; i < n; ++i)
+	{
+		cout << *arr[i] << " ";
+	}
+	cout << endl;
+}
+
+template <typename T>
+T lesser(T a, T b)
+{
+	cout << "T A" << "\t";
+	return a < b ? a : b;
+}
+
+int lesser(int a, int b)
+{
+	cout << "T B" << "\t";
+	a = a < 0 ? -a : a;
+	b = b < 0 ? -b : b;
+	return a < b ? a : b;
+}
+
 //---------------8.5函数模板
 void templateFunc()
 {
+
+	// 8.15-----自己选择
+	int m = 20;
+	int n = -30;
+	double x = 15.5;
+	double y = 25.9;
+	cout << lesser(m, n) << endl;//T B
+	cout << lesser(x, y) << endl;//T A
+	cout << lesser<>(m, n) << endl; //T A
+	cout << lesser<int>(x, y) << endl;  //T A
+
+
+	// 8.14-----函数调用的优先级,编译器选择哪个模板
+	int things[6] = { 13, 31, 103, 301, 310, 130 };
+	struct debts
+	{
+		char name[50];
+		double number;
+	};
+	struct debts mr_E[3] = 
+	{
+		{"Ima Wolfe", 2400.1},
+		{"Ure Foxe", 1300.0 },
+		{"Iby Stout", 1800.0}
+	};
+	double* pd[3];
+	for (int i = 0; i < 3; ++i)
+	{
+		pd[i] = &mr_E[i].number;
+	}
+	cout << "Listing Mr.E's counts of things:\n";
+	ShowArray(things, 6); //template A
+	ShowArray(&things, 6); //template A
+	ShowArray(pd, 3); //template B
+	ShowArray(*pd, 3);//template A
+
 
 	//-----8.13 显式具体化
 	cout << cout.precision(2);
