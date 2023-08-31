@@ -673,20 +673,25 @@ T* MyMaxNumber(T* arr , int size){
 }
 
 template <class T>
-int sumArray(T *arr[]){
-    return sizeof (arr);
+T sumArray(T arr[], int size){
+    cout<<"template A"<<endl;
+    T sum = 0;
+    for (int i = 0; i < size; i++)
+        sum ++;
+    return sum;
 }
 
-struct debts
-{
-    char name[50];
-    double number;
-};
-template<>
-int sumArray<debts> (debts* arr[]){
-    cout << "sizeof (arr) is " << sizeof (arr) << endl;
-    return sizeof (arr);
+
+template <class T>
+int sumArray(T* arr[], int size){
+    cout<<"template B"<<endl;
+    int sum = 0;
+    for (int i = 0; i < size; i++)
+        sum ++;
+    return sum;
 }
+
+
 
 template <>
 char* MyMaxNumber(char* charArr, int size){
@@ -866,14 +871,23 @@ int main（）{
     示数组的内容。程序应显示thing的总和以及所有debt的总和。
      */
     int things[6] = { 13, 31, 103, 301, 310, 130 };
+    struct debts
+    {
+        char name[50];
+        double number;
+    };
     struct debts mr_E[3] =
             {
                     {"Ima Wolfe",2400.0},
                     {"Ura Foxe",1300.0},
                     {"Iby Stout",1800.0}
             };
-    cout << "sum of things" << sumArray(things) << endl;
-    cout << "sum of mr_E" << sumArray(mr_E) << endl;
+    cout << "sum of things" << sumArray(things,sizeof(things) ) << endl;
+    double *pd[3];
+    for (int i = 0; i < 3; ++i) {
+        pd[i] = &mr_E[i].number;
+    }
+    cout << "sum of mr_E" << sumArray(pd, sizeof(pd)) << endl;
 
 }
 
