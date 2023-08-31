@@ -537,11 +537,99 @@ void templateFunc()
 	cout << "b is " << b << endl;
 }
 
+void review(){
+//    1.哪种函数适合定义为内联函数？
+//    答：函数体简单，调用频繁的函数
+
+//    2.假设song()函数的原型如下：
+//    void song(char* name, int times);
+//    a.如何修改song()函数的原型，使得第二个参数的默认值为1？
+//    答：void song(char* name, int times = 1);
+//    b.函数的定义需要做哪些修改？
+//    c.能否为name提供默认值”Billy”？
+//    答：不能，因为默认参数只能从右往左提供。
+
+//    3.编写iquote（）的重载版本一显示其用双引号括起的参数。编写3个版本：一个用于int参数，一个用于double参数，另一个用于string参数。
+//    a. void iquote(int a);
+//    b. void iquote(double a);
+//    c. void iquote(string a);
+
+//    4.下面是一个函数模板：
+struct box
+{
+    char maker[40];
+    float height;
+    float width;
+    float length;
+    float volume;
+};
+//    a.请编写一个函数，它将box结构的引用作为形参，并显示每个成员的值。
+box myBox = {"box", 10, 20, 30, 6000};
+[](box& box1)
+{
+    cout << "maker is " << box1.maker << endl;
+    cout << "height is " << box1.height << endl;
+    cout << "width is " << box1.width << endl;
+    cout << "length is " << box1.length << endl;
+    cout << "volume is " << box1.volume << endl;
+}(myBox);
+//    b.请编写一个函数，它将box结构的引用作为形参，并将volume成员设置为其他3边的乘积。
+[](box& box1)
+{
+    box1.volume = box1.height * box1.width * box1.length;
+}(myBox);
+
+
+//    5.为让函数fll()和show()使用引用参数，需要对程序清单7.15做哪些修改？
+
+
+//    6.指出下面每个目标是否可以使用默认参数或函数重载完成，或者这两种方法都无法完成，并提供合
+//    适的原型。
+//    a.mass(density,volume)返回密度为density、体积为volume的物体的质量，而mass(denstity)返回密度
+//    为density、体积为l.0立方米的物体的质量。这些值的类型都为double。
+    // void mass(double density, double volume = 1.0);
+
+//    b.repeat(l0,“i'm OK)将指定的字符串显示l0次，而repeate(But you're kind of stupid)将指定的字符
+//    串显示5次。
+//    void repeat(int times, const char* str); repeat(const char* str);
+
+//    c.average(3,6)返回两个int参数的平均值(int类型)，而average(3.0,6.0)返回两个double值的平均值
+//    (double类型)。
+//        void average(int a, int b); void (double a, double b);
+
+//    d.mangle("i'm glad to meet you'")根据是将值赋给char变量还是char*变量，分别返回字符I和指向字
+//    符串“I'm mad to gleet you”的指针。
+//    char mangle(char str); char* mangle(char* str);
+
+//    7.编写返回两个参数中较大值的函数模板。
+/*
+template<typename T>
+T Max(T a , T B)
+    return a > B ? a : B;
+*/
+
+ /*   8.给定复习题6的模板和复习题4的box结构，提供一个模板具体化，它接受两个box参数，并返回
+    体积较大的一个。*/
+
+
+//    9.在下述代码（假定这些代码是一个完整程序的一部分）中，v1、v2、v3、v4和v5分别是哪种类型？
+//    int g(int x);
+//    float m 5.5f;
+//    float rm m;
+//    decltype(m)vi m;
+//    decltype(rm)v2 m;
+//    decltype((m))v3 m;
+//    decltype (g(100))v4;
+//    decltype (2.0 m)v5;
+}
+
 int main()
 {
+    //----------8.7复习题
+    review();
 
 	//------------8.5函数模板
-	templateFunc();
+    //	templateFunc();
 
 	// -------------8.3默认参数
 	//defaultParam();
