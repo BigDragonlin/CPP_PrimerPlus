@@ -2,6 +2,7 @@
 #include <ctime>
 #include <fstream>
 #include <cstdlib>
+#include <cstring>
 
 using namespace std;
 //5.1 for循环
@@ -610,23 +611,279 @@ T Max(T a , T B)
 
  /*   8.给定复习题6的模板和复习题4的box结构，提供一个模板具体化，它接受两个box参数，并返回
     体积较大的一个。*/
+ [](box& box1, box& box2)
+ {
+     return box1.volume > box2.volume ? box1 : box2;
+ }(myBox, myBox);
+
+/*
+ * 9.在下述代码（假定这些代码是一个完整程序的一部分）中，v1、v2、v3、v4和v5分别是哪种类型？
+    int g(int x);
+    ...
+    float m = 5.5f;
+    float& rm = m;
+    decltype(m)v1 = m; //float
+    decltype(rm)v2  = m; //float&
+    decltype((m))v3 = m; //float&
+    decltype (g(100))v4; //int
+    decltype (2.0 * m)v5; //double
+
+    */
+
+}
+
+template<class T>
+void show(T& string, int times = 1) {
+    for (int i = 0; i < times; ++i) {
+        cout << string <<endl;
+    }
+}
+
+template<class T>
+T& max5(const T& a, const T& b, const T& c, const T& d, const T& e) {
+    T max = a;
+    if (max < b) {
+        max = b;
+    }
+    if (max < c) {
+        max = c;
+    }
+    if (max < d) {
+        max = d;
+    }
+    if (max < e) {
+        max = e;
+    }
+    cout << "max is " << max << endl;
+}
+
+template <class T>
+T* MyMaxNumber(T* arr , int size){
+    T& tempMax = arr[0];
+    cout << "tempMax is " << tempMax << endl;
+    cout << "tempMax address is " << &tempMax << endl;
+    for (int i = 1; i < size; ++i) {
+        if(arr[i] > tempMax){
+            tempMax = arr[i];
+        }
+    }
+    cout << "final tempMax is " << tempMax << endl;
+    cout << "final tempMax address is " << &tempMax << endl;
+    return &tempMax;
+}
+
+template <class T>
+int sumArray(T *arr[]){
+    return sizeof (arr);
+}
+
+struct debts
+{
+    char name[50];
+    double number;
+};
+template<>
+int sumArray<debts> (debts* arr[]){
+    cout << "sizeof (arr) is " << sizeof (arr) << endl;
+    return sizeof (arr);
+}
+
+template <>
+char* MyMaxNumber(char* charArr, int size){
+    char& tempChar = charArr[0];
+    for (int i = 1; i < size; ++i) {
+
+    }
+    return &tempChar;
+}
 
 
-//    9.在下述代码（假定这些代码是一个完整程序的一部分）中，v1、v2、v3、v4和v5分别是哪种类型？
-//    int g(int x);
-//    float m 5.5f;
-//    float rm m;
-//    decltype(m)vi m;
-//    decltype(rm)v2 m;
-//    decltype((m))v3 m;
-//    decltype (g(100))v4;
-//    decltype (2.0 m)v5;
+void test(){
+
+    /*
+     * 1.编写通常接受一个参数（字符串的地址），并打印该字符串的函数。然而，如果提供了第二个参数
+    (it类型)，且该参数不为0，则该函数打印字符串的次数将为该函数被调用的次数（注意，字符串的打印
+    次数不等于第二个参数的值，而等于函数被调用的次数）。是的，这是一个非常可笑的函数，但它让您能够
+    使用本章介绍的一些技术。在一个简单的程序中使用该函数，以演示该函数是如何工作的。
+    */
+
+
+
+
+/*
+    2.CandyBar结构包含3个成员。第一个成员存储candy bar的品牌名称；第二个成员存储candy bar
+    的重量（可能有小数）；第三个成员存储candy bar的热量（整数）。请编写一个程序，它使用一个这样的函
+    数，即将CandyBar的引用、char指针、double和int作为参数，并用最后3个值设置相应的结构成员。最
+    后3个参数的默认值分别为“Millennium Munch”、2.85和350。另外，该程序还包含一个以CandyBar的
+    引用为参数，并显示结构内容的函数。请尽可能使用const。
+*/
+    struct CandyBar
+    {
+        char name[20];
+        double weight;
+        int hot;
+    };
+    CandyBar candyBar;
+    auto setCandyBar = [](CandyBar& candyBar, const char* name = "Millennium Munch", const double weight = 2.85, const int hot = 350)
+    {
+        strcpy(candyBar.name, name);
+        candyBar.weight = weight;
+        candyBar.hot = hot;
+    };
+    setCandyBar(candyBar);
+    auto showCandyBar = [](const CandyBar& candyBar)
+    {
+        cout << "name is " << candyBar.name << endl;
+        cout << "weight is " << candyBar.weight << endl;
+        cout << "hot is " << candyBar.hot << endl;
+    };
+    showCandyBar(candyBar);
+    ::printf("-------------------\n");
+    char name[20] = "test01";
+    strcpy(candyBar.name, name);
+    candyBar.weight = 3.00;
+    candyBar.hot = 400;
+    showCandyBar(candyBar);
+
+    /*3.编写一个函数，它接受一个指向string对象的引用作为参数，并将该string对象的内容转换为大写，
+    为此可使用表6.4描述的函数toupper（）。然后编写一个程序，它通过使用一个循环让您能够用不同的输入
+    来测试这个函数，该程序的运行情况如下：
+
+    Enter a string (g to quit):go away
+    GO AWAY
+    Next string (g to quit):good grief!
+    GOOD GRIEF!
+    Next string (g to quit):q
+    Bye.
+     */
+    ::printf("Enter a string (g to quit):");
+    auto toUpper = [](string& str)
+    {
+        for (char & singleChar : str)
+        {
+            singleChar = std::toupper(singleChar);
+            if (singleChar == 'q')
+            {
+                return;
+            }
+        }
+    };
+    string str = "hello world";
+    toUpper(str);
+    cout << str << endl;
+    ::printf("Next string (g to quit):");
+    string str2 = "good grief!";
+    toUpper(str2);
+    cout << str2 << endl;
+    ::printf("--------------------\n");
+
+/*
+#include <iostream>
+using namespace std;
+#include <cstring> //for strlen（）,strcpy（）
+
+struct stringy{
+    char str; //points to a string
+    int ct; //length of string (not counting \0')
+}；
+
+//prototypes for set（）,show（）,and show（）go here
+int main（）{
+    stringy beany;
+    char testing[] = "Reality isn't what it used to be."
+    set(beany,testing);
+    //first argument is a reference,
+    //allocates space to hold copy of testing,
+    //sets str member of beany to point to the
+    //new block,copies testing to new block,
+    //and sets ct member of beany
+
+    show(beany);//prints member string once
+    show(beany,2);//prints member string twice
+    testing[0]='D';
+    testing [1]'u';
+    show(testing);//prints testing string once
+    show(testing,3);//prints testing string thrice
+    show("Done!")；
+    return 0;
+}
+请提供其中描述的函数和原型，从而完成该程序。注意，应有两个show（）函数，每个都使用默认参数。
+请尽可能使用consnt参数。set（）使用new分配足够的空间来存储指定的字符串。这里使用的技术与设计和
+实现类时使用的相似。(可能还必须修改头文件的名称，删除using编译指令，这取决于所用的编译器。)
+*/
+    string beany;
+    char testing[] = "Reality isn't what it used to be.";
+    auto set = [](string& beany, const char* testing)
+    {
+        beany = testing;
+    };
+    set(beany,testing);
+    //first argument is a reference,
+    //allocates space to hold copy of testing,
+    //sets str member of beany to point to the
+    //new block,copies testing to new block,
+    //and sets ct member of beany
+    show(beany);//prints member string once
+    ::printf("--------------------\n");
+    show(beany,2);//prints member string twice
+    testing[0] = 'D';
+    testing[1] = 'u';
+    ::printf("----------------------\n");
+    show(testing);//prints testing string once
+    ::printf("----------------------\n");
+    show(testing,3);//prints testing string thrice
+    show("Done!");
+    ::printf("-----------------------\n");
+
+
+    /*
+     * 5.编写模板函数max5（）,它将一个包含5个T类型元素的数组作为参数，并返回数组中最大的元素
+    (由于长度固定，因此可以在循环中使用硬编码，而不必通过参数来传递)。在一个程序中使用该函数，将
+    T替换为一个包含5个it值的数组和一个包含5个dowble值的数组，以测试该函数。
+    */
+    auto number = max5(1,2,3,4,5);
+    cout << number << endl;
+    ::printf("-------------------------\n");
+
+    /*
+     * 6.编写模板函数maxn（）,它将由一个T类型元素组成的数组和一个表示数组元素数目的整数作为参
+    数，并返回数组中最大的元素。在程序对它进行测试，该程序使用一个包含6个t元素的数组和一个包
+    含4个double元素的数组来调用该函数。程序还包含一个具体化，它将char指针数组和数组中的指针数量
+    作为参数，并返回最长的字符串的地址。如果有多个这样的字符串，则返回其中第一个字符串的地址。使
+    用由5个字符串指针组成的数组来测试该具体化。
+    */
+    int arr[6] = {1,2,3,4,5,6};
+    auto maxNumber = MyMaxNumber(arr, size(arr));
+    for (int i = 0; i < 6; ++i) {
+        cout << "arr"<< i <<"address is " << &arr[i] << endl;
+    }
+    cout << "maxNumer is " << *maxNumber << endl;
+    cout << "maxNumer address is " << maxNumber << endl; // "maxNumer address is 0x61fe18
+
+
+    /*
+     * 7.修改程序清单8.14，使其使用两个名为SumArray()的模板函数来返回数组元素的总和，而不是显
+    示数组的内容。程序应显示thing的总和以及所有debt的总和。
+     */
+    int things[6] = { 13, 31, 103, 301, 310, 130 };
+    struct debts mr_E[3] =
+            {
+                    {"Ima Wolfe",2400.0},
+                    {"Ura Foxe",1300.0},
+                    {"Iby Stout",1800.0}
+            };
+    cout << "sum of things" << sumArray(things) << endl;
+    cout << "sum of mr_E" << sumArray(mr_E) << endl;
+
 }
 
 int main()
 {
+    //----------8.8编程练习
+    test();
+
     //----------8.7复习题
-    review();
+//    review();
 
 	//------------8.5函数模板
     //	templateFunc();
