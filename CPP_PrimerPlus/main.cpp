@@ -163,6 +163,8 @@ void functionAndArray()
 int main()
 {
 
+	// --------------9.1单独编译
+	 
 
  	// ------------------7.3函数和数组
 	//functionAndArray();
