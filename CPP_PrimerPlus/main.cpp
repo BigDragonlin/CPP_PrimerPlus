@@ -136,8 +136,93 @@ void loopTxtInput()
 	cout << "the end count is " << count << endl;
 }
 
+//5.6 嵌套循环和二维数组
+void nestedLoopAnd2DArray(){
+    
+
+//    for (int i = 1; i < 128; i = 2 * i) {
+//        ::printf("i = %d\n", i);
+//    }
+//
+//    ::printf("--------------------\n");
+//    int i = 1;
+//    while (i < 128){
+//        ::printf("i = %d\n", i);
+//        i *= 2;
+//    }
+
+//    ::printf("--------------------\n");
+//    int k = 8;
+//    do {
+//        cout << "k = " << k << endl; //8 9 10
+//    } while (k++ < 10);
+//
+//    ::printf("--------------------\n");
+//    int m = 5;
+//    while (++m < 10){ //6 7 8 9 10
+//        cout << "m = " << m << endl;
+//    }
+//    ::printf("--------------------\n");
+//    int n = 5;
+//    while (n++ < 10){ //5 6 7 8 9; 6 7 8 9 10
+//        ::printf("n = %d\n", n);
+//    }
+//
+//    ::printf("--------------------\n");
+//    for (int i = 0; i < 11; ++i) {
+//        ::printf("i = %d\n", i);
+//    }
+//    for (int i = 0; i < 11; i++) {
+//        ::printf("i = %d\n", i);
+//    }
+//
+//    ::printf("--------------------\n");
+//    int j;
+//    for (j = 0; j < 11; j += 3){
+//        ::printf("j = %d\n", j);
+//    }
+//
+//    ::printf("--------------------\n");
+//    int i ;
+//    for (i = 0; i < 5; ++i) {
+//        ::printf("i = %d\n", i);
+//    }
+//
+//    ::printf("--------------------\n");
+//    const char* cities[4] = {
+//            "city_1",
+//            "city_2",
+//            "city_3",
+//            "city_4"
+//    };
+//    int maxTemps[4][4] = {
+//            {32, 34, 35, 36},
+//            {31, 33, 34, 35},
+//            {30, 32, 33, 34},
+//            {29, 31, 32, 33}
+//    };
+//
+//    for (auto & citie : cities) {
+//        cout << citie << '\t';
+//        int i = 0;
+//        for (auto & temps : maxTemps[i]) {
+//           cout << temps << '\t';
+//        }
+//        cout << endl;
+//    }
+//
+//    cout<< "----------------" << endl;
+//    for (int year = 2020; year < 2024; ++year) {
+//        for (int city = 1; city < 5; ++city) {
+//            cout << "year = " << year << " city = " << "city_"<<city << '\t';
+//        }
+//        cout << endl;
+//    }
+}
+
 void functionAndArray()
 {
+    //匿名函数
 	auto n_char = [](char inputChar, int num)
 	{
 		while (num-- > 0)
@@ -166,10 +251,12 @@ int main()
 
  	// ------------------7.3函数和数组
 	//functionAndArray();
+    //---------5.6 嵌套循环和二维数组
+    nestedLoopAnd2DArray();
 
 
-	//----------5.5 循环和文本输入
-	// loopTxtInput();
+//	----------5.5 循环和文本输入
+//	 loopTxtInput();
 
 	//----------5.4 基于范围的for循环
 	//forLoopBaseRange();
