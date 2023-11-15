@@ -12,8 +12,12 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3571350f-f34b-4485-8d6b-8cc6257eb697" name="Changes" comment="完成第五章除了总复习">
-      <change afterPath="$PROJECT_DIR$/CPP_PrimerPlus/5_cyclicRelationshipAndRelationalExpression.cpp" afterDir="false" />
+    <list default="true" id="3571350f-f34b-4485-8d6b-8cc6257eb697" name="Changes" comment="完成第五章">
+      <change afterPath="$PROJECT_DIR$/CPP_PrimerPlus/9_memeryModelAndNameSpace/coordin.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CPP_PrimerPlus/9_memeryModelAndNameSpace/file1.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CPP_PrimerPlus/9_memeryModelAndNameSpace/file2.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPP_PrimerPlus/9_memeryModelAndNameSpace.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP_PrimerPlus/9_memeryModelAndNameSpace/9_memeryModelAndNameSpace.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CPP_PrimerPlus/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP_PrimerPlus/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +29,7 @@
     <option name="formatViaClangd" value="false" />
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2UjPjMiC3XLCgaxQSH7CvP6wUbu" />
@@ -54,6 +59,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\source\repos\BigDragonlin\CPP_PrimerPlus\CPP_PrimerPlus\9_memeryModelAndNameSpace" />
       <recent name="C:\Users\Administrator\source\repos\BigDragonlin\CPP_PrimerPlus\CPP_PrimerPlus" />
     </key>
   </component>
@@ -92,6 +98,7 @@
       <workItem from="1699941875794" duration="11000" />
       <workItem from="1699941906260" duration="4720000" />
       <workItem from="1700017034272" duration="2374000" />
+      <workItem from="1700029351931" duration="2072000" />
     </task>
     <task id="LOCAL-00001" summary="202308311350">
       <created>1693461068588</created>
@@ -128,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699946655581</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="完成第五章">
+      <created>1700029397171</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1700029397171</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,6 +215,7 @@
     <MESSAGE value="202308311733" />
     <MESSAGE value="20230831738" />
     <MESSAGE value="完成第五章除了总复习" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成第五章除了总复习" />
+    <MESSAGE value="完成第五章" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成第五章" />
   </component>
 </project>
