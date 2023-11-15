@@ -2,8 +2,8 @@
 // Created by Administrator on 2023/11/15/015.
 //
 #include <iostream>
+#include "coordin.h"
 using namespace std;
-
 /*9.1 单独编译
  *- 不要把定义放到头文件中，这样可能有问题
  *- <include> 编译器会找标准库里的头文件
@@ -12,5 +12,12 @@ using namespace std;
  * */
 
 void memeryModelAndNameSpaceMain(){
-    cout << "Hello, World!" << endl;
+    polar m_polar;
+    rect m_rect;
+
+    printf("请输入x和y的值");
+    while (cin>>m_rect.x>>m_rect.y){
+        m_polar = rect_to_polar(m_rect);
+        show_polar(m_polar);
+    }
 }
