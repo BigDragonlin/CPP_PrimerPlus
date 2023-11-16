@@ -4,6 +4,7 @@
 # IntelliJ project files
 .idea
 *.iml
+*.gitignore
 out
 gen
 cmake-build-debug
