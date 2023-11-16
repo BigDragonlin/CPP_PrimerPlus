@@ -16,6 +16,6 @@ polar rect_to_polar(rect xypos) {
 
 void show_polar(polar dapos){
     ::printf("------------------show_polar----\n");
-    ::printf("平方根：%d",dapos.distance);
-    ::printf("弧度制：%d",dapos.angle);
+    ::printf("square root:%d",dapos.distance);
+    ::printf("radian: %d",dapos.angle);
 }

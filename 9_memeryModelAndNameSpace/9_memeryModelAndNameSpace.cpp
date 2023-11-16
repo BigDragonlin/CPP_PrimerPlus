@@ -11,11 +11,11 @@ using namespace std;
  *
  * */
 
-void memeryModelAndNameSpaceMain(){
+void memoryModelAndNameSpaceMain(){
     polar m_polar;
     rect m_rect;
 
-    printf("请输入x和y的值");
+    printf("please enter x and y");
     while (cin>>m_rect.x>>m_rect.y){
         m_polar = rect_to_polar(m_rect);
         show_polar(m_polar);
