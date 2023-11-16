@@ -1,0 +1,10 @@
+# ninja log v5
+0	311	7218267966083030	CMakeFiles/CPP_PrimerPlus.dir/main.cpp.obj	2e800baf5ff322af
+8	331	7218269169359481	CMakeFiles/CPP_PrimerPlus.dir/9_memeryModelAndNameSpace/9_memeryModelAndNameSpace.cpp.obj	15a5629090723a87
+2	406	7218269170117450	CMakeFiles/CPP_PrimerPlus.dir/9_memeryModelAndNameSpace/file2.cpp.obj	680b1ef4f6feb151
+2	332	7218269796992670	CMakeFiles/CPP_PrimerPlus.dir/9_memeryModelAndNameSpace/9_memeryModelAndNameSpace.cpp.obj	15a5629090723a87
+333	415	7218269797790532	CPP_PrimerPlus.exe	46ca7955efb68841
+3	375	7218270132125079	CMakeFiles/CPP_PrimerPlus.dir/9_memeryModelAndNameSpace/9_memeryModelAndNameSpace.cpp.obj	15a5629090723a87
+377	485	7218270133192226	CPP_PrimerPlus.exe	46ca7955efb68841
+3	392	7218270948190438	CMakeFiles/CPP_PrimerPlus.dir/9_memeryModelAndNameSpace/file2.cpp.obj	680b1ef4f6feb151
+393	476	7218270948983984	CPP_PrimerPlus.exe	46ca7955efb68841

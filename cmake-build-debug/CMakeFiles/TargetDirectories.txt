@@ -1,0 +1,3 @@
+C:/Users/Administrator/source/repos/BigDragonlin/CPP_PrimerPlus/cmake-build-debug/CMakeFiles/CPP_PrimerPlus.dir
+C:/Users/Administrator/source/repos/BigDragonlin/CPP_PrimerPlus/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Administrator/source/repos/BigDragonlin/CPP_PrimerPlus/cmake-build-debug/CMakeFiles/rebuild_cache.dir
