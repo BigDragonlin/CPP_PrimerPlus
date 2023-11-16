@@ -248,6 +248,24 @@ CPP_PrimerPlus_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 CPP_PrimerPlus_SOURCE_DIR:STATIC=C:/Users/Administrator/source/repos/BigDragonlin/CPP_PrimerPlus
 
+//Value Computed by CMake
+CPP_PrimerPlusaa_BINARY_DIR:STATIC=C:/Users/Administrator/source/repos/BigDragonlin/CPP_PrimerPlus/cmake-build-debug/9_memeryModelAndNameSpace
+
+//Value Computed by CMake
+CPP_PrimerPlusaa_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+CPP_PrimerPlusaa_SOURCE_DIR:STATIC=C:/Users/Administrator/source/repos/BigDragonlin/CPP_PrimerPlus/9_memeryModelAndNameSpace
+
+//Value Computed by CMake
+Project_BINARY_DIR:STATIC=C:/Users/Administrator/source/repos/BigDragonlin/CPP_PrimerPlus/cmake-build-debug
+
+//Value Computed by CMake
+Project_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+Project_SOURCE_DIR:STATIC=C:/Users/Administrator/source/repos/BigDragonlin/CPP_PrimerPlus
+
 
 ########################
 # INTERNAL cache entries
@@ -351,7 +369,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
