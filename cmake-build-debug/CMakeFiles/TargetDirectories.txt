@@ -1,5 +1,0 @@
-C:/Users/Administrator/source/repos/BigDragonlin/CPP_PrimerPlus/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Administrator/source/repos/BigDragonlin/CPP_PrimerPlus/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-C:/Users/Administrator/source/repos/BigDragonlin/CPP_PrimerPlus/cmake-build-debug/9_memeryModelAndNameSpace/CMakeFiles/aaa.dir
-C:/Users/Administrator/source/repos/BigDragonlin/CPP_PrimerPlus/cmake-build-debug/9_memeryModelAndNameSpace/CMakeFiles/edit_cache.dir
-C:/Users/Administrator/source/repos/BigDragonlin/CPP_PrimerPlus/cmake-build-debug/9_memeryModelAndNameSpace/CMakeFiles/rebuild_cache.dir

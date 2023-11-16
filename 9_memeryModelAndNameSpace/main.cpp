@@ -5,6 +5,7 @@ using namespace std;
 int main()
 {
     memoryModelAndNameSpaceMain();
+    ::printf("test");
     return 0;
 }
 
