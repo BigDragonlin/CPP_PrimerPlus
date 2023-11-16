@@ -6,21 +6,39 @@
   <component name="CMakePresetLoader">{
   &quot;useNewFormat&quot;: true
 }</component>
-  <component name="CMakeSettings">
+  <component name="CMakeSettings" AUTO_RELOAD="true">
     <configurations>
       <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3571350f-f34b-4485-8d6b-8cc6257eb697" name="Changes" comment="完成第五章除了总复习">
-      <change afterPath="$PROJECT_DIR$/CPP_PrimerPlus/9_memeryModelAndNameSpace/9_memeryModelAndNameSpace.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CPP_PrimerPlus/CMakeLists.txt" afterDir="false" />
+    <list default="true" id="3571350f-f34b-4485-8d6b-8cc6257eb697" name="Changes" comment="1115">
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/CPP_PrimerPlus/main_20230901100723.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/CPP_PrimerPlus/main_20230901105822.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/CPP_PrimerPlus/main_20230901105825.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/CPP_PrimerPlus/main_20230901105827.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/CPP_PrimerPlus/main_20230901110130.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/CPP_PrimerPlus/main_20230901110135.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/CPP_PrimerPlus/main_20230901110137.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/CPP_PrimerPlus/main_20230901110140.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/CPP_PrimerPlus/main_20230901110141.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/CPP_PrimerPlus/main_20230901110142.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.history/CPP_PrimerPlus/main_20230901110143.cpp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_PrimerPlus/9_memeryModelAndNameSpace/9_memeryModelAndNameSpace.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP_PrimerPlus/9_memeryModelAndNameSpace/9_memeryModelAndNameSpace.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_PrimerPlus/9_memeryModelAndNameSpace/file1.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_PrimerPlus/9_memeryModelAndNameSpace/file2.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP_PrimerPlus/9_memeryModelAndNameSpace/file2.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_PrimerPlus/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP_PrimerPlus/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPP_PrimerPlus.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPP_PrimerPlus/4_compound_type.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/4_compound_type.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPP_PrimerPlus/5_cyclicRelationshipAndRelationalExpression.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/5_cyclicRelationshipAndRelationalExpression.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPP_PrimerPlus/8_FunctionStart.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/8_FunctionStart.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPP_PrimerPlus/9_memeryModelAndNameSpace/9_memeryModelAndNameSpace.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/9_memeryModelAndNameSpace/9_memeryModelAndNameSpace.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPP_PrimerPlus/9_memeryModelAndNameSpace/9_memeryModelAndNameSpace.h" beforeDir="false" afterPath="$PROJECT_DIR$/9_memeryModelAndNameSpace/9_memeryModelAndNameSpace.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPP_PrimerPlus/9_memeryModelAndNameSpace/coordin.h" beforeDir="false" afterPath="$PROJECT_DIR$/9_memeryModelAndNameSpace/coordin.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPP_PrimerPlus/9_memeryModelAndNameSpace/file2.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/9_memeryModelAndNameSpace/file2.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPP_PrimerPlus/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPP_PrimerPlus/CPP_PrimerPlus.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPP_PrimerPlus/CPP_PrimerPlus.vcxproj.filters" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPP_PrimerPlus/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,51 +48,53 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="CMakeLists.txt" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2UjPjMiC3XLCgaxQSH7CvP6wUbu" />
   <component name="ProjectLevelVcsManager">
-    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/Administrator/source/repos/BigDragonlin/CPP_PrimerPlus",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "CompDBSettings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore_missing_gitignore&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Administrator/source/repos/BigDragonlin/CPP_PrimerPlus&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;structure.view.defaults.are.configured&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\source\repos\BigDragonlin\CPP_PrimerPlus" />
+      <recent name="C:\Users\Administrator\source\repos\BigDragonlin\CPP_PrimerPlus\CPP_PrimerPlus\9_memeryModelAndNameSpace" />
       <recent name="C:\Users\Administrator\source\repos\BigDragonlin\CPP_PrimerPlus\CPP_PrimerPlus" />
     </key>
   </component>
-  <component name="RunManager" selected="C/C++ 文件.main.cpp">
-    <configuration name="未命名cc" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" WORKING_DIR="file://$PROJECT_DIR$/CPP_PrimerPlus" PASS_PARENT_ENVS_2="true" RUN_PATH="$PROJECT_DIR$/CPP_PrimerPlus/CMakeLists.txt" EXPLICIT_BUILD_TARGET_NAME="all">
+  <component name="RunManager" selected="C/C++ 文件.main.cpp (1)">
+    <configuration name="test" type="CMakeListConfigurationType" factoryName="CMakeListConfigurationFactory">
+      <method v="2" />
+    </configuration>
+    <configuration name="main.cpp (1)" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CPP_PrimerPlus" TARGET_NAME="main.cpp" CONFIG_NAME="main.cpp">
+      <option name="sourceFile" value="main.cpp" />
       <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="main.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CPP_PrimerPlus" TARGET_NAME="main.cpp" CONFIG_NAME="main.cpp">
@@ -83,12 +103,24 @@
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="lua.app" factoryName="Lua Application">
+      <option name="program" value="lua.exe" />
+      <option name="file" value="" />
+      <option name="workingDir" value="$PROJECT_DIR$/main.cpp" />
+      <option name="debuggerType" value="1" />
+      <option name="params" value="" />
+      <option name="charset" value="UTF-8" />
+      <option name="showConsole" value="true" />
+      <method v="2" />
+    </configuration>
     <list>
+      <item itemvalue="C/C++ 文件.main.cpp (1)" />
       <item itemvalue="C/C++ 文件.main.cpp" />
-      <item itemvalue="CMake 应用程序.未命名cc" />
+      <item itemvalue="CMake 调试.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="C/C++ 文件.main.cpp (1)" />
         <item itemvalue="C/C++ 文件.main.cpp" />
       </list>
     </recent_temporary>
@@ -115,8 +147,11 @@
       <workItem from="1699941875794" duration="11000" />
       <workItem from="1699941906260" duration="4720000" />
       <workItem from="1700017034272" duration="2374000" />
-      <workItem from="1700061988316" duration="4669000" />
-      <workItem from="1700068009549" duration="875000" />
+      <workItem from="1700029351931" duration="2072000" />
+      <workItem from="1700108444149" duration="232000" />
+      <workItem from="1700120113920" duration="1388000" />
+      <workItem from="1700121662179" duration="53000" />
+      <workItem from="1700121750480" duration="334000" />
     </task>
     <task id="LOCAL-00001" summary="202308311350">
       <created>1693461068588</created>
@@ -153,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699946655581</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="完成第五章">
+      <created>1700029397171</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1700029397171</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,6 +268,7 @@
     <MESSAGE value="202308311733" />
     <MESSAGE value="20230831738" />
     <MESSAGE value="完成第五章除了总复习" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成第五章除了总复习" />
+    <MESSAGE value="完成第五章" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成第五章" />
   </component>
 </project>

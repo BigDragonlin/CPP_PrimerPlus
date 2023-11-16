@@ -2,7 +2,7 @@
 
 int main()
 {
-    memeryModelAndNameSpaceMain();
+    memoryModelAndNameSpaceMain();
     return 0;
 }
 
