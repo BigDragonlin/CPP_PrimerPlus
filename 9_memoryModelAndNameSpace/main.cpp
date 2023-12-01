@@ -1,17 +1,10 @@
 #include "9_memeryModelAndNameSpace.h"
 
-#include "iostream"
-#include "StorageDuringScopeAndLinkage.h"
+void externalMain();
+int main() {
 
-using namespace std;
-
-int main()
-{
-    //9.2储存持续性，作用域和链接性
-    StorageDuringScopeAndLinkageShow();
-
-    //9.1单独编译
 //    memoryModelAndNameSpaceMain();
-
+//    9.2.4  静态持续性，外部连接性
+    externalMain();
 }
 

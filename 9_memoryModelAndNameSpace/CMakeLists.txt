@@ -1,1 +1,1 @@
-add_executable(9_memeryModelAndNameSpace main.cpp file2.cpp 9_memeryModelAndNameSpace.cpp StorageDuringScopeAndLinkage.cpp StorageDuringScopeAndLinkage.h)
+add_executable(9_memeryModelAndNameSpace main.cpp file2.cpp 9_memeryModelAndNameSpace.cpp external.cpp support.cpp)
