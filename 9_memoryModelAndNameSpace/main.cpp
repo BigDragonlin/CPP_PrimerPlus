@@ -1,6 +1,6 @@
 #include "9_memeryModelAndNameSpace.h"
-
-void externalMain();
+#include "external.h"
+//void externalMain();
 int main() {
 
 //    memoryModelAndNameSpaceMain();

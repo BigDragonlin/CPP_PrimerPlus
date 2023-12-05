@@ -8,7 +8,7 @@ double warming = 0.3;
 
 void update(double dt);
 void local();
-int externalMain(){
+int externalMain() {
     ::printf("global warming is %f",warming);
     update(0.1);
     ::printf("global warming is %f",warming);

@@ -1,0 +1,30 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+'这个abstract是抽象类
+abstract class AbstractList
+abstract AbstractCollection
+'这个是接口
+interface List
+interface Collection
+
+List <|-- AbstractList
+Collection <|-- AbstractCollection
+
+Collection <|- List
+AbstractCollection <|- AbstractList
+AbstractList <|-- ArrayList
+
+class ArrayList {
+Object[] elementData
+size()
+}
+'这个是注释
+enum TimeUnit {
+DAYS
+HOURS
+MINUTES
+}
+
+'这个endduml是结束
+@enduml
