@@ -8,3 +8,4 @@ int main() {
     externalMain();
 }
 
+// 英文 对象和类

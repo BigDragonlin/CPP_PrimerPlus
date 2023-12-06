@@ -13,4 +13,5 @@ set(CMAKE_CXX_STANDARD 17)
 #指定如何安装项目的各个组件
 #install()
 #添加一个子目录到构建
+add_subdirectory(project/StutentManagementSystem)
 add_subdirectory(9_memoryModelAndNameSpace)

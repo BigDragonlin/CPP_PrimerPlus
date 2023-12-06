@@ -10,9 +10,7 @@
     <option name="reloaded" value="true" />
   </component>
   <component name="CMakeRunConfigurationManager">
-    <generated>
-      <config projectName="CPP_PrimerPlus" targetName="9_memeryModelAndNameSpace" />
-    </generated>
+    <generated />
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
     <configurations>
@@ -20,12 +18,16 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3571350f-f34b-4485-8d6b-8cc6257eb697" name="Changes" comment="111617.20">
-      <change afterPath="$PROJECT_DIR$/9_memoryModelAndNameSpace/external.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Markdown/test.puml" afterDir="false" />
+    <list default="true" id="3571350f-f34b-4485-8d6b-8cc6257eb697" name="Changes" comment="12.5">
+      <change afterPath="$PROJECT_DIR$/project/StutentManagementSystem/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/StutentManagementSystem/SMS.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme/test.markdown" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/9_memoryModelAndNameSpace/external.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/9_memoryModelAndNameSpace/external.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/9_memoryModelAndNameSpace/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/9_memoryModelAndNameSpace/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/9_memoryModelAndNameSpace/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/9_memoryModelAndNameSpace/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Markdown/test.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/10_ObjectAndClasses/10_ObjectAndClasses.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Markdown/test.puml" beforeDir="false" afterPath="$PROJECT_DIR$/readme/test.puml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +83,7 @@
     &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore_missing_gitignore&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Administrator/source/repos/BigDragonlin/CPP_PrimerPlus/10_test&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Administrator/source/repos/BigDragonlin/CPP_PrimerPlus/project/StutentManagementSystem&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -90,10 +92,16 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;,
     &quot;structure.view.defaults.are.configured&quot;: &quot;true&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/新建临时文件&quot;: [
+      &quot;ObjectiveC&quot;
+    ]
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\source\repos\BigDragonlin\CPP_PrimerPlus\project\StutentManagementSystem" />
       <recent name="C:\Users\Administrator\source\repos\BigDragonlin\CPP_PrimerPlus\10_test" />
       <recent name="C:\Users\Administrator\source\repos\BigDragonlin\CPP_PrimerPlus\9_memeryModelAndNameSpace" />
       <recent name="C:\Users\Administrator\source\repos\BigDragonlin\CPP_PrimerPlus" />
@@ -106,11 +114,11 @@
       <recent name="C:\Users\Administrator\source\repos\BigDragonlin\CPP_PrimerPlus" />
     </key>
   </component>
-  <component name="RunManager" selected="CMake 应用程序.9_memeryModelAndNameSpace">
+  <component name="RunManager">
     <configuration name="CPP_PrimerPlus" type="CMakeListConfigurationType" factoryName="CMakeListConfigurationFactory" temporary="true">
       <method v="2" />
     </configuration>
-    <configuration name="9_memeryModelAndNameSpace" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CPP_PrimerPlus" TARGET_NAME="9_memeryModelAndNameSpace" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CPP_PrimerPlus" RUN_TARGET_NAME="9_memeryModelAndNameSpace">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -125,15 +133,6 @@
       <option name="showConsole" value="true" />
       <method v="2" />
     </configuration>
-    <list>
-      <item itemvalue="CMake 应用程序.9_memeryModelAndNameSpace" />
-      <item itemvalue="CMake 调试.CPP_PrimerPlus" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="CMake 调试.CPP_PrimerPlus" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -167,7 +166,9 @@
       <workItem from="1700122997563" duration="525000" />
       <workItem from="1700123540484" duration="3635000" />
       <workItem from="1701421954768" duration="9000" />
-      <workItem from="1701742953232" duration="1000" />
+      <workItem from="1701742953232" duration="2556000" />
+      <workItem from="1701745597721" duration="2497000" />
+      <workItem from="1701873490771" duration="47000" />
     </task>
     <task id="LOCAL-00001" summary="202308311350">
       <created>1693461068588</created>
@@ -253,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701399256432</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="12.5">
+      <created>1701743108744</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1701743108744</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,6 +274,40 @@
     <isAutomaticFoundErrors value="true" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+        <entry key="cdb8b801-c728-4a50-b9a3-0e5bc9f3ae66">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:C:/Users/Administrator/source/repos/BigDragonlin/CPP_PrimerPlus/CPP_PrimerPlus" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="OPEN_GENERIC_TABS">
       <map>
         <entry key="cdb8b801-c728-4a50-b9a3-0e5bc9f3ae66" value="TOOL_WINDOW" />
@@ -291,40 +333,6 @@
         </entry>
       </map>
     </option>
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-        <entry key="cdb8b801-c728-4a50-b9a3-0e5bc9f3ae66">
-          <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="HEAD" />
-                      </list>
-                    </value>
-                  </entry>
-                  <entry key="structure">
-                    <value>
-                      <list>
-                        <option value="dir:C:/Users/Administrator/source/repos/BigDragonlin/CPP_PrimerPlus/CPP_PrimerPlus" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="202308311350" />
@@ -336,6 +344,7 @@
     <MESSAGE value="1116" />
     <MESSAGE value="1117" />
     <MESSAGE value="111617.20" />
-    <option name="LAST_COMMIT_MESSAGE" value="111617.20" />
+    <MESSAGE value="12.5" />
+    <option name="LAST_COMMIT_MESSAGE" value="12.5" />
   </component>
 </project>

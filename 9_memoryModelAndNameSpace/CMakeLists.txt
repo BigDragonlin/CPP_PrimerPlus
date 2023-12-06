@@ -1,1 +1,1 @@
-add_executable(9_memeryModelAndNameSpace main.cpp file2.cpp 9_memeryModelAndNameSpace.cpp external.cpp support.cpp)
+add_executable(9_memeryModelAndNameSpace main.cpp file2.cpp 9_memeryModelAndNameSpace.cpp external.cpp support.cpp ../project/StutentManagementSystem/SMS.cpp ../project/StutentManagementSystem/SMS.cpp)
