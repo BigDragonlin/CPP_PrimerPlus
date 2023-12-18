@@ -10,7 +10,11 @@
     <option name="reloaded" value="true" />
   </component>
   <component name="CMakeRunConfigurationManager">
-    <generated />
+    <generated>
+      <config projectName="CPP_PrimerPlus" targetName="StudentManagementSystem" />
+      <config projectName="CPP_PrimerPlus" targetName="TinyRayCaster" />
+      <config projectName="CPP_PrimerPlus" targetName="9_memeryModelAndNameSpace" />
+    </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
     <configurations>
@@ -19,9 +23,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3571350f-f34b-4485-8d6b-8cc6257eb697" name="Changes" comment="12.6">
-      <change afterPath="$PROJECT_DIR$/readme/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/TinyRayCaster/001.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme/test.markdown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/TinyRayCaster/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/project/TinyRayCaster/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/TinyRayCaster/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/project/TinyRayCaster/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +56,9 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -65,34 +74,34 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultPlantUmlFileTemplate": "UML Class",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "deletionFromPopupRequiresConfirmation": "false",
-    "git-widget-placeholder": "master",
-    "ignore_missing_gitignore": "true",
-    "last_opened_file_path": "C:/Users/Administrator/source/repos/BigDragonlin/CPP_PrimerPlus/project/StutentManagementSystem",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "cn.yiiguxing.plugin.translate",
-    "structure.view.defaults.are.configured": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultPlantUmlFileTemplate&quot;: &quot;UML Class&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore_missing_gitignore&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Administrator/source/repos/BigDragonlin/CPP_PrimerPlus/project/StutentManagementSystem&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;cn.yiiguxing.plugin.translate&quot;,
+    &quot;structure.view.defaults.are.configured&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/新建临时文件": [
-      "ObjectiveC"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/新建临时文件&quot;: [
+      &quot;ObjectiveC&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Administrator\source\repos\BigDragonlin\CPP_PrimerPlus\project\StutentManagementSystem" />
@@ -101,14 +110,37 @@
       <recent name="C:\Users\Administrator\source\repos\BigDragonlin\CPP_PrimerPlus" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Dream\source\repos\CPP_PrimerPlus\project\TinyRayCaster" />
       <recent name="C:\Users\Administrator\source\repos\BigDragonlin\CPP_PrimerPlus\8_FunctionStart" />
       <recent name="C:\Users\Administrator\source\repos\BigDragonlin\CPP_PrimerPlus\5_cyclicRelationshipAndRelationalExpression" />
       <recent name="C:\Users\Administrator\source\repos\BigDragonlin\CPP_PrimerPlus\4_compound_type" />
       <recent name="C:\Users\Administrator\source\repos\BigDragonlin\CPP_PrimerPlus\9_memeryModelAndNameSpace" />
-      <recent name="C:\Users\Administrator\source\repos\BigDragonlin\CPP_PrimerPlus" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="CMake 应用程序.TinyRayCaster">
+    <configuration name="CPP_PrimerPlus" type="CMakeListConfigurationType" factoryName="CMakeListConfigurationFactory" temporary="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="9_memeryModelAndNameSpace" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CPP_PrimerPlus" TARGET_NAME="9_memeryModelAndNameSpace" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CPP_PrimerPlus" RUN_TARGET_NAME="9_memeryModelAndNameSpace">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentManagementSystem" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CPP_PrimerPlus" TARGET_NAME="StudentManagementSystem" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CPP_PrimerPlus" RUN_TARGET_NAME="StudentManagementSystem">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TinyRayCaster" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CPP_PrimerPlus" TARGET_NAME="TinyRayCaster" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CPP_PrimerPlus" RUN_TARGET_NAME="TinyRayCaster">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="lua.app" factoryName="Lua Application">
       <option name="program" value="lua.exe" />
       <option name="file" value="" />
@@ -119,9 +151,12 @@
       <option name="showConsole" value="true" />
       <method v="2" />
     </configuration>
-    <configuration name="CPP_PrimerPlus" type="CMakeListConfigurationType" factoryName="CMakeListConfigurationFactory" temporary="true">
-      <method v="2" />
-    </configuration>
+    <list>
+      <item itemvalue="CMake 应用程序.9_memeryModelAndNameSpace" />
+      <item itemvalue="CMake 应用程序.StudentManagementSystem" />
+      <item itemvalue="CMake 应用程序.TinyRayCaster" />
+      <item itemvalue="CMake 调试.CPP_PrimerPlus" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -161,6 +196,7 @@
       <workItem from="1701873640599" duration="147000" />
       <workItem from="1701915922761" duration="2141000" />
       <workItem from="1702466977417" duration="432000" />
+      <workItem from="1702778493387" duration="2941000" />
     </task>
     <task id="LOCAL-00001" summary="202308311350">
       <created>1693461068588</created>

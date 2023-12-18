@@ -15,3 +15,4 @@ set(CMAKE_CXX_STANDARD 17)
 #添加一个子目录到构建
 add_subdirectory(project/StutentManagementSystem)
 add_subdirectory(9_memoryModelAndNameSpace)
+add_subdirectory(project/TinyRayCaster)
