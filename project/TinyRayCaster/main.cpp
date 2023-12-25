@@ -2,15 +2,16 @@
 #include <vector>
 #include <fstream>
 #include <cassert>
+#include <cstdint>
 
 
-//½«ÑÕÉ«´ò°ü³ÉÒ»¸ö32Î»µÄÕûÊı
+//å°†é¢œè‰²æ‰“åŒ…æˆä¸€ä¸ª32ä½çš„æ•´æ•°
 uint32_t pack_color(const uint8_t r, const uint8_t g, const uint8_t b, const uint8_t a=255) {
     return (a<<24) + (b<<16) + (g<<8) + r;
 }
 
 void unpack_color(const uint32_t &color, uint8_t &r, uint8_t &g, uint8_t &b, uint8_t &a) {
-    //Ê¹ÓÃÎ»ÔËËãÄÜ¹»½«ÑÕÉ«·ÖÀë³öÀ´£¬Ö»ÄÃ×îµÍ8Î»¡£ÔÚÕâÀï²»Ê¹ÓÃÓëÔËËãÒ²ÊÇ¿ÉÒÔµÄ£¬ÒòÎªuint8_tÖ»ÓĞ8Î»
+    //ä½¿ç”¨ä½è¿ç®—èƒ½å¤Ÿå°†é¢œè‰²åˆ†ç¦»å‡ºæ¥ï¼Œåªæ‹¿æœ€ä½8ä½ã€‚åœ¨è¿™é‡Œä¸ä½¿ç”¨ä¸è¿ç®—ä¹Ÿæ˜¯å¯ä»¥çš„ï¼Œå› ä¸ºuint8_tåªæœ‰8ä½
     r = (color >>  0) & 255;
     g = (color >>  8) & 255;
     b = (color >> 16) & 255;
@@ -18,42 +19,43 @@ void unpack_color(const uint32_t &color, uint8_t &r, uint8_t &g, uint8_t &b, uin
 }
 
 void drop_ppm_image(const std::string filename, const std::vector<uint32_t> &image, const size_t w, const size_t h) {
-    //¶ÏÑÔ ±£Ö¤Í¼Æ¬µÄ´óĞ¡ºÍÈİÆ÷µÄ´óĞ¡Ò»ÖÂ?
+    //æ–­è¨€ ä¿è¯å›¾ç‰‡çš„å¤§å°å’Œå®¹å™¨çš„å¤§å°ä¸€è‡´?å¦‚æœç­‰äºw*hé‚£ä¹ˆä¸æŠ¥é”™
+
     assert(image.size() == w*h);
-    //´´½¨ÎÄ¼ş
+    //åˆ›å»ºæ–‡ä»¶
     std::ofstream ofs(filename, std::ios::binary);
-    //Ğ´ÈëÎÄ¼şÍ·
+    //å†™å…¥æ–‡ä»¶å¤´
     ofs << "P6\n" << w << " " << h << "\n255\n";
-    //Ğ´ÈëÎÄ¼şÄÚÈİ
+    //å†™å…¥æ–‡ä»¶å†…å®¹
     for (size_t i = 0; i < h*w; ++i) {
         uint8_t r, g, b, a;
         unpack_color(image[i], r, g, b, a);
-        //ÎªÊ²Ã´Òª½«uint8_t×ª»»³Échar?
-        //ÒòÎªuint8_tÊÇÒ»¸ö×Ö½Ú£¬¶øcharÒ²ÊÇÒ»¸ö×Ö½Ú£¬ËùÒÔ¿ÉÒÔÖ±½Ó×ª»»¡£ÎªÁËÀàĞÍÆ¥Åä£¬±ØĞëÒª½øĞĞ¼æÈİ
         ofs << static_cast<char>(r) << static_cast<char>(g) << static_cast<char>(b);
     }
     ofs.close();
 }
 
 int main() {
-    //´´½¨Í¼Æ¬´óĞ¡
-    //½«Í¼Æ¬³õÊ¼»¯
+    //åˆ›å»ºå›¾ç‰‡å¤§å°
+    //å°†å›¾ç‰‡åˆå§‹åŒ–ä¸º512*384å¤§å°ï¼Œå¹¶ä¸”å¡«å……255ï¼Œ ä½¿ç”¨usign32_tå»å¡«å……
     const size_t win_width = 512;
     const size_t win_height = 384;
-    //´´½¨ÈİÆ÷
+    //åˆ›å»ºå®¹å™¨
     std::vector<uint32_t> framebuffer(win_width * win_height, 255);
-    //½«ÈİÆ÷Ìî³äÓ³Éäµ½ÈİÆ÷ÖĞ
-    //fill the screen with color gradients 
+    //å°†å®¹å™¨å¡«å……æ˜ å°„åˆ°å®¹å™¨ä¸­
+    //fill the screen with color gradients
     for (size_t j = 0; j < win_height; j++) {
         for (size_t i = 0; i < win_width; i++) {
             uint8_t r = 255 * i / float(win_width);
             uint8_t g = 255 * j / float(win_height);
             uint8_t b = 0;
+            //å°†äºŒç»´æ•°ç»„è½¬åŒ–ä¸ºä¸€ç»´æ•°ç»„
             framebuffer[i + j * win_width] = pack_color(r, g, b);
         }
     }
-    //½«ÈİÆ÷ÖĞµÄÊı¾İĞ´Èëµ½ÎÄ¼şÖĞ
+    //å°†å®¹å™¨ä¸­çš„æ•°æ®å†™å…¥åˆ°æ–‡ä»¶ä¸­
     drop_ppm_image("./out.ppm", framebuffer, win_width, win_height);
 
     return 0;
+
 }
