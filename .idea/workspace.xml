@@ -14,6 +14,7 @@
       <config projectName="CPP_PrimerPlus" targetName="StudentManagementSystem" />
       <config projectName="CPP_PrimerPlus" targetName="TinyRayCaster" />
       <config projectName="CPP_PrimerPlus" targetName="9_memeryModelAndNameSpace" />
+      <config projectName="CPP_PrimerPlus" targetName="Test" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -22,11 +23,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3571350f-f34b-4485-8d6b-8cc6257eb697" name="Changes" comment="12.6">
-      <change afterPath="$PROJECT_DIR$/project/TinyRayCaster/001.png" afterDir="false" />
+    <list default="true" id="3571350f-f34b-4485-8d6b-8cc6257eb697" name="Changes" comment="1221">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/TinyRayCaster/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/project/TinyRayCaster/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/TinyRayCaster/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/project/TinyRayCaster/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,8 +39,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CMakeLists.txt" />
         <option value="UML Class" />
+        <option value="CMakeLists.txt" />
       </list>
     </option>
   </component>
@@ -56,8 +54,10 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitToolBoxStore">
-    <option name="projectConfigVersion" value="5" />
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_HOME_DIR$/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstdint" root0="SKIP_INSPECTION" />
+    <setting file="file://$APPLICATION_HOME_DIR$/bin/mingw/x86_64-w64-mingw32/include/corecrt.h" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/project/Test/main.cpp" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -67,6 +67,10 @@
     <option name="majorVersion" value="2023" />
     <option name="minorVersion" value="1.1" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2UjPjMiC3XLCgaxQSH7CvP6wUbu" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -76,23 +80,26 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;CMake 应用程序.Test.executor&quot;: &quot;Run&quot;,
     &quot;DefaultPlantUmlFileTemplate&quot;: &quot;UML Class&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.RadMigrateCodeStyle&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore_missing_gitignore&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Administrator/source/repos/BigDragonlin/CPP_PrimerPlus/project/StutentManagementSystem&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Administrator/Desktop/SVR&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;cn.yiiguxing.plugin.translate&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;structure.view.defaults.are.configured&quot;: &quot;true&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -110,11 +117,11 @@
       <recent name="C:\Users\Administrator\source\repos\BigDragonlin\CPP_PrimerPlus" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Dream\source\repos\CPP_PrimerPlus\project\TinyRayCaster" />
       <recent name="C:\Users\Administrator\source\repos\BigDragonlin\CPP_PrimerPlus\8_FunctionStart" />
       <recent name="C:\Users\Administrator\source\repos\BigDragonlin\CPP_PrimerPlus\5_cyclicRelationshipAndRelationalExpression" />
       <recent name="C:\Users\Administrator\source\repos\BigDragonlin\CPP_PrimerPlus\4_compound_type" />
       <recent name="C:\Users\Administrator\source\repos\BigDragonlin\CPP_PrimerPlus\9_memeryModelAndNameSpace" />
+      <recent name="C:\Users\Administrator\source\repos\BigDragonlin\CPP_PrimerPlus" />
     </key>
   </component>
   <component name="RunManager" selected="CMake 应用程序.TinyRayCaster">
@@ -131,12 +138,12 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TinyRayCaster" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CPP_PrimerPlus" TARGET_NAME="TinyRayCaster" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CPP_PrimerPlus" RUN_TARGET_NAME="TinyRayCaster">
+    <configuration name="Test" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CPP_PrimerPlus" TARGET_NAME="Test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CPP_PrimerPlus" RUN_TARGET_NAME="Test">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration name="TinyRayCaster" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CPP_PrimerPlus" TARGET_NAME="TinyRayCaster" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CPP_PrimerPlus" RUN_TARGET_NAME="TinyRayCaster">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -154,6 +161,7 @@
     <list>
       <item itemvalue="CMake 应用程序.9_memeryModelAndNameSpace" />
       <item itemvalue="CMake 应用程序.StudentManagementSystem" />
+      <item itemvalue="CMake 应用程序.Test" />
       <item itemvalue="CMake 应用程序.TinyRayCaster" />
       <item itemvalue="CMake 调试.CPP_PrimerPlus" />
     </list>
@@ -196,7 +204,14 @@
       <workItem from="1701873640599" duration="147000" />
       <workItem from="1701915922761" duration="2141000" />
       <workItem from="1702466977417" duration="432000" />
-      <workItem from="1702778493387" duration="2941000" />
+      <workItem from="1702976597666" duration="1828000" />
+      <workItem from="1703148424988" duration="6511000" />
+      <workItem from="1703216559275" duration="40000" />
+      <workItem from="1703216611037" duration="73000" />
+      <workItem from="1703558928483" duration="2338000" />
+      <workItem from="1703645612327" duration="2805000" />
+      <workItem from="1703731551297" duration="810000" />
+      <workItem from="1703733296574" duration="4057000" />
     </task>
     <task id="LOCAL-00001" summary="202308311350">
       <created>1693461068588</created>
@@ -296,14 +311,21 @@
       <option name="project" value="LOCAL" />
       <updated>1701873678851</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="1221">
+      <created>1703152911252</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1703152911252</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VCPKGProject">
-    <isAutomaticEditVcpkgJson value="false" />
+    <isAutomaticEditVcpkgJson value="true" />
     <isAutomaticCheckingOnLaunch value="false" />
     <isAutomaticFoundErrors value="true" />
     <isAutomaticFoundErrors value="true" />
@@ -381,7 +403,8 @@
     <MESSAGE value="111617.20" />
     <MESSAGE value="12.5" />
     <MESSAGE value="12.6" />
-    <option name="LAST_COMMIT_MESSAGE" value="12.6" />
+    <MESSAGE value="1221" />
+    <option name="LAST_COMMIT_MESSAGE" value="1221" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
